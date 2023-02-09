@@ -217,8 +217,8 @@ resource "aws_cloudfront_distribution" "this" {
   price_class = "PriceClass_100"
   restrictions {
     geo_restriction {
-      restriction_type = "whitelist"
-      locations        = ["US", "CA"]
+      restriction_type = "none"
+      locations        = []
     }
   }
   viewer_certificate {
